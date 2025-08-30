@@ -41,4 +41,77 @@
 # for i in range(1,101):
 #     if i % 2 == 0:
 #         print(i)
-
+#8)Hacer un programaque cuente del 1 al 100 inclusive e imprima los numeros que 
+#son divisibles por 2 y 5 
+# for i in range(1,101):
+#     if(i%2==0 and i%5==0):
+#         print(i)
+#9)Hacer un programa que imprima una tabla de multiplicar del 2 al 9. Cada uno 
+#debe mostrar sus valores multiplicados del 1 al  9 inclusive.
+# for i in range (2,10):
+#     for j in range(1,10):
+#         print(i,"*",j,"=",str(i*j))
+#10)Hacer un programa que muestre el siguiente dibujo
+#   * * * * * * * * * *
+#   * * * * * * * * * *
+#   * * * * * * * * * *
+#   * * * * * * * * * *
+#   * * * * * * * * * *
+# for i in range (5):
+#     for j in range(10):
+#         print("*", end=" ")
+#     print("")
+#11)Hacer un programa que muestre el siguiente dibujo
+#   * * * * * * * * * *
+#   *                 *
+#   *                 *
+#   *                 *
+#   * * * * * * * * * *
+# for i in range (5):
+#     for j in range(10):
+#         if (i==0) or i==4  or (j==0) or (j==9):
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print("")
+#12)Hacer un programa que muestre el siguiente dibujo
+#   * 
+#   * *
+#   * * * 
+#   * * * *
+#   * * * * *
+# for i in range(5):
+#     for j in range(5):
+#         if(j<=i):
+#             print("*",end=" ")
+#     print("")
+#13)Hacer un programa que muestre el siguiente dibujo
+#   * * * * *
+#   * * * * *
+#   * * * 
+#   * * 
+#   * 
+# for i in range(5):
+#     for j in range(5):
+#         if (j>=i):
+#             print("*",end=" ")
+#     print("")
+#==============================FUNCIONES=================================
+#14)Crea una funcion EscribirCentrado, que reciba como parametro un texto y lo escriba 
+#centrado en pantalla suponiendo una anchura de 80 columnas. 
+# def EscribirCentrado(texto):
+#     anchura = 80
+#     print(texto.center(anchura))
+# text = input("Ingrese el texto: ")
+# EscribirCentrado(text)
+#15)Crea un programa que pida dos numeros al usuario y diga si alguno
+#de ellos es multiplo del otro. Crea una funcion EsMultiplo que reciba los dos numeros
+#y devuelve si el primero es multiplo del segundo.
+# def EsMultiplo(num1,num2):
+#     if num1 % num2 == 0 or num2 % num1 == 0:
+#         return print("Si es multiplo")
+#     else:
+#         return print("No es multiplo")
+# number1 = input("Ingrese el primer numero:")
+# number2 = input("Ingrese el segundo numero:")
+# EsMultiplo(int(number1),int(number2))
