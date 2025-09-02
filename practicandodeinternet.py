@@ -220,3 +220,32 @@
 #         return MCD(menor,resto)
 # number1 = int(input("Ingrese el primer numero: "))
 # number2 = int(input("Ingrese el segundo numero: "))
+#23) Escribir 2 funciones que permitan calcular :
+#La cantidad de segundos en tiempo dado en horas, minutos y segundos
+#La cantidad de horas, minutos y segundos de un tiempo dado en segundos
+#Escribe un programa principal con un menu donde se pueda elegir la opcion 
+#de convertir a horas, minutos y segundos o salir del programa
+# def calcularSegundos(horas,minutos,segundos):
+#     return (horas*3600 + minutos*60 + segundos)
+# def calcularTiempo(segundos):
+#     hora = segundos//3600
+#     segundos_restantes = segundos%3600
+#     minutos = segundos_restantes//60
+#     segundos_finales=segundos_restantes%60
+#     return hora,minutos,segundos_finales
+    
+# while True:
+#     print("======MENU=======")
+#     print("1. Convertir horas:minutos:segundos a segundos")
+#     print("2. Convertir segundos a horas:minutos:segundos")
+#     op = int(input("Ingrese una opcion: "))
+#     if(op==1):
+#         h = int(input("Ingrese la hora: "))
+#         m = input("Ingrese los minutos")
+#         s = input("Ingrese los segundos")
+#         print("La hora: ",h,":",m,":",s," es: ",calcularSegundos(h,m,s))
+#     elif(op==2):
+#         s = int(input("Ingrese los segundos: "))
+#         print("Los segundos :",s," es: ",calcularTiempo(s))
+#     else:
+#         break
